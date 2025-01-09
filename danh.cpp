@@ -7,5 +7,5 @@ int main()
 	cout<<"My mane is Danh"<<endl;
 	cout <<"2006"
 	cout
-	
+	cout
 }
