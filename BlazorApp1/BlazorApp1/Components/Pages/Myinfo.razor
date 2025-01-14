@@ -1,0 +1,116 @@
+﻿@page "/myinfo"
+
+<MudGrid>
+    <MudItem xs="4">
+        <MudCard>
+            <MudCardHeader>
+                <h3>Graphite on roof</h3>
+            </MudCardHeader>
+            <MudCardContent>
+                <MudGrid>
+                    <MudItem xs="6">
+                        <h2>149,567</h2>
+                    </MudItem>
+                    <MudItem xs="6">
+                        <MudChart ChartType="ChartType.Bar" ChartSeries="@Series" Width="100%" Height="50px" ChartOptions="@chartOption1"></MudChart>
+                    </MudItem>
+                </MudGrid>
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+    <MudItem xs="4">
+        <MudCard>
+            <MudCardContent>
+                <MudText>Story of the day</MudText>
+                <MudText Typo="Typo.body2">The quick, brown fox jumps over a lazy dog.</MudText>
+            </MudCardContent>
+            <MudCardActions>
+                <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+            </MudCardActions>
+        </MudCard>
+
+    </MudItem>
+    <MudItem xs="4">
+        <MudCard>
+            <MudCardContent>
+                <MudText>Story of the day</MudText>
+                <MudText Typo="Typo.body2">The quick, brown fox jumps over a lazy dog.</MudText>
+            </MudCardContent>
+            <MudCardActions>
+                <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+            </MudCardActions>
+        </MudCard>
+
+    </MudItem>
+    <MudItem xs="4">
+        <MudCard>
+            <MudCardContent>
+                <MudText>Story of the day</MudText>
+                <MudText Typo="Typo.body2">The quick, brown fox jumps over a lazy dog.</MudText>
+            </MudCardContent>
+            <MudCardActions>
+                <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+            </MudCardActions>
+        </MudCard>
+
+    </MudItem>
+    <MudItem xs="8">
+        <MudCard>
+            <MudCardContent>
+                <MudText>Story of the day</MudText>
+                <MudText Typo="Typo.body2">The quick, brown fox jumps over a lazy dog.</MudText>
+            </MudCardContent>
+            <MudCardActions>
+                <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+            </MudCardActions>
+        </MudCard>
+
+    </MudItem>
+    <MudItem xs="4">
+        <MudCard>
+            <MudCardContent>
+                <MudText>Story of the day</MudText>
+                <MudText Typo="Typo.body2">The quick, brown fox jumps over a lazy dog.</MudText>
+            </MudCardContent>
+            <MudCardActions>
+                <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+            </MudCardActions>
+        </MudCard>
+
+    </MudItem>
+    <MudItem xs="4">
+        <MudCard>
+            <MudCardContent>
+                <MudText>Story of the day</MudText>
+                <MudText Typo="Typo.body2">The quick, brown fox jumps over a lazy dog.</MudText>
+            </MudCardContent>
+            <MudCardActions>
+                <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+            </MudCardActions>
+        </MudCard>
+
+    </MudItem>
+    <MudItem xs="4">
+        <MudCard>
+            <MudCardContent>
+                <MudText>Story of the day</MudText>
+                <MudText Typo="Typo.body2">The quick, brown fox jumps over a lazy dog.</MudText>
+            </MudCardContent>
+            <MudCardActions>
+                <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+            </MudCardActions>
+        </MudCard>
+
+    </MudItem>
+</MudGrid>
+
+@code {
+    ChartOptions chartOption1 = new ChartOptions()
+        {
+            ShowLegend = false,
+        };
+    public List<ChartSeries> Series = new List<ChartSeries>()
+    {
+        new ChartSeries() { Data = new double[] { 40, 20, 25, 27, 46, 60, 48, 80, 15 } },
+    };
+}
